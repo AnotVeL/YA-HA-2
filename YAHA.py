@@ -30,6 +30,7 @@ with col1:
   st.caption('Plot Sin')
   x = np.linspace(-2 * np.pi, 2 * np.pi, 1000) # Generating x values from -2*pi to 2*pi
   y = np.sin(x) # Calculating sin(x) values
+  
   fig, ax = plt.subplots(figsize=(16, 8))
   ax.plot(x, y, label='sin(x)', color='b') # plotting sin(x) curve
   ax.set_ylabel("Sin x")
@@ -37,11 +38,24 @@ with col1:
   ax.tick_params(axis='y', labelsize=20)
   ax.set_xticklabels(ax.get_xticklabels(), rotation=30, ha='right')
   ax.tick_params(axis='x', labelsize=15)
+  
   st.pyplot(fig)
 
 with col2:
   st.caption('Plot Cos')
   x = np.linspace(-2 * np.pi, 2 * np.pi, 1000) #Generating x values from -2*pi to 2*pi
   y = np.cos(x) # Calculating sin(x) values
+  
+  fig, ax = plt.subplots(figsize=(16, 8))
+  ax.plot(x, y, label='cos(x)', color='b') # plotting sin(x) curve
+  ax.set_ylabel("Cos x")
+  ax.set_xlabel("x")
+  ax.tick_params(axis='y', labelsize=20)
+  ax.set_xticklabels(ax.get_xticklabels(), rotation=30, ha='right')
+  ax.tick_params(axis='x', labelsize=15)
+  
+  st.pyplot(fig)
+
+st.caption('Copyright @ AVL Corp 2024')
   
 
