@@ -35,7 +35,7 @@ with col1:
   ax.set_ylabel("Sin x")
   ax.set_xlabel("x")
   ax.tick_params(axis='y', labelsize=20)
-  ax.set_xticklabels(ax.get_sticklabels(), rotation=30, ha='right')
+  ax.set_xticklabels(ax.get_xticklabels(), rotation=30, ha='right')
   ax.tick_params(axis='x', labelsize=15)
   st.pyplot(fig)
 
