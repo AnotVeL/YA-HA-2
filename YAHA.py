@@ -56,6 +56,6 @@ with col2:
   
   st.pyplot(fig)
 
-st.caption('Copyright @ AVL Corp 2024')
+st.caption('Copyright @ AVL Corp. 2024')
   
 
