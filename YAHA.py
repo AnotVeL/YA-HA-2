@@ -10,7 +10,7 @@ x = np.linspace(-2 * np.pi, 2 * np.pi, 1000) # Generating x values from -2*pi to
 y = np.sin(x) # Calculating sin(x) values
 z = np.cos(x) # Calculating sin(x) values
 
-fig, ax = p;t.subplots(figsize=(16,8))
+fig, ax = plt.subplots(figsize=(16,8))
 ax.plot(x, y, label='sin(x)', color='b') #Plotting sin(x) curve
 ax.plot(x, z, label='cos(x)', color='g') #Plotting sin(x) curve
 ax.set_ylabel("")
