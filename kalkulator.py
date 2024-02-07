@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Header
-st.header('Wira :dinosaur:')
+st.header('Wira :dinosaurs:')
 st.subheader('Calculator')
 
 c1, c2, c3 = st.columns(3)
@@ -13,7 +13,7 @@ with c2:
   satuan = st.selectbox(
     'Operator',
     ('+', '-', 'x', ':'),key='k1')
-  st.write(':moon:')
+  st.write(':sparkle:')
 with c3:
   y = st.number_input('Number  ',value=100)
 
