@@ -7,7 +7,7 @@ st.subheader('Calculator')
 c1, c2, c3 = st.columns(3)
 
 with c1:
-  y = st.number_input('Number ',value=100)
+  x = st.number_input('Number ',value=100)
   st.write('=>: ')
 with c2:
   satuan = st.selectbox(
