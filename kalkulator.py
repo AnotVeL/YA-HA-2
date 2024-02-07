@@ -18,17 +18,17 @@ with c3:
   y = st.number_input('Number  ',value=100)
 
 # Operasi matematika dan penampilan hasil
-    if satuan == '+':
-        result = x + y
-    elif satuan == '-':
-        result = x - y
-    elif satuan == 'x':
-        result = x * y
-    elif satuan == ':':
-        if y != 0:
-            result = x / y
-        else:
-            result = "Tidak bisa melakukan pembagian dengan nol"
+if satuan == '+':
+  result = x + y
+elif satuan == '-':
+  result = x - y
+elif satuan == 'x':
+  result = x * y
+elif satuan == ':':
+    if y != 0:
+      result = x / y
+    else:
+      result = "Tidak bisa melakukan pembagian dengan nol"
 
   
 st.write(x,satuan,y,' = ',result)
