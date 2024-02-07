@@ -8,7 +8,7 @@ c1, c2, c3 = st.columns(3)
 
 with c1:
   x = st.number_input('Number ',value=100)
-  st.write(':arrow:')
+  st.write(':car:')
 with c2:
   satuan = st.selectbox(
     'Operator',
