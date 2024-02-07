@@ -13,7 +13,7 @@ with c2:
   satuan = st.selectbox(
     'Operator',
     ('+', '-', 'x', ':'),key='k1')
-  st.write(':sparkles:')
+  st.write(':moon:')
 with c3:
   y = st.number_input('Number  ',value=100)
 
