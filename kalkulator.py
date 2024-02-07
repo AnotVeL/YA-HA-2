@@ -32,6 +32,6 @@ with st.expander('Hasil'):
             result = "Tidak bisa melakukan pembagian dengan nol"
 
   
-st.write(x,satuan,y,' = ',Hasil)
+st.write(x,satuan,y,' = ',result)
 
 st.caption('Copyright @ AVL Corp. 2024')
