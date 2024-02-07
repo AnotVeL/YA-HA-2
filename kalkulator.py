@@ -14,8 +14,10 @@ with c2:
     'Operator',
     ('+', '-', 'x', ':'),key='k1')
   st.write(':sparkles:')
+with c3:
+  y = st.number_input('Number ',value=100)
 
   
-st.write(x,satuan,' = ')
+st.write(x,satuan,y,' = ')
 
 st.caption('Copyright @ AVL Corp. 2024')
