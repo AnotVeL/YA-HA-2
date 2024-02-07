@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Header
-st.header('Wira :sparkles:')
+st.header('Wira :dinosaur:')
 st.subheader('Calculator')
 
 c1, c2, c3 = st.columns(3)
