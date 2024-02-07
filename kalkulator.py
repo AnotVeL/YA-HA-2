@@ -16,6 +16,6 @@ with c2:
   st.write(':sparkles:')
 
   
-st.write(x,'',satuan,' = ',' ')
+st.write(x,satuan,' = ')
 
 st.caption('Copyright @ AVL Corp. 2024')
