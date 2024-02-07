@@ -2,7 +2,7 @@ import streamlit as st
 
 # Header
 st.header('Wira :sparkles:')
-st.subheader('Plot')
+st.subheader('Calculator')
 
 c1, c2 = st.columns(2)
 
