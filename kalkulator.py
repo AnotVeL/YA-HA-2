@@ -14,9 +14,7 @@ with c2:
     'Operator',
     ('+', '-', 'x', ':'),key='k1')
   st.write(':sparkles:')
-with c3:
-  x = st.number_input('Number ',value=100)
-  st.write('=>: ')
+
   
 st.write(x,'',satuan,' = ',' ')
 
