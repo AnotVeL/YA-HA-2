@@ -13,7 +13,7 @@ with c2:
   satuan = st.selectbox(
     'Satuan',
     ('+', '-', 'x', ':'),key='k1')
-    st.write(':sparkles: ')
+    st.write(':sparkles:')
 st.write(x,'',satuan,' = ',' ')
 
 st.caption('Copyright @ AVL Corp. 2024')
