@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 def f(x):
     return 23*x**2 + 9*x + 18
 
+st.write('TUGAS HARI KE-4')
+
 x = st.slider('Select range', -2.0, 2.0, (0.2, 0.5))
 st.write('Selected range:', x)
 
