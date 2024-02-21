@@ -16,7 +16,7 @@ def trapezoidal_integral(f, a, b, n):
 
 # Streamlit app
 st.title('Integral Trapesium untuk Fungsi')
-st.title(r'f(x) = $23x^2 + 9x + 18$')
+st.title('$f(x) = 23x^2 + 9x + 18$')
 
 # Slider untuk memilih rentang nilai x
 st.sidebar.header('Pilih Rentang Nilai x')
