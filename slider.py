@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 # Definisi fungsi
 def f(x):
-    return 23x**2 + 9*x + 18
+    return 23*x**2 + 9*x + 18
 
 # Fungsi untuk menghitung integral menggunakan metode trapesium
 def trapezoidal_integral(f, a, b, n):
