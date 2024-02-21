@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 def f(x):
     return 23*x**2 + 9*x + 18
 
-x = st.slider('Select range', 0.0, 2.0, (0.2, 0.5))
+x = st.slider('Select range', -2.0, 2.0, (0.2, 0.5))
 st.write('Selected range:', x)
 
 # Calculate the values of the function
