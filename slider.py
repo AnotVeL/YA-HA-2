@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
-q = 23*x**2
+q = 23x^2
 # Definisi fungsi
 def f(x):
     return 23*x**2 + 9*x + 18
