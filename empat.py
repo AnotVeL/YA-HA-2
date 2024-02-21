@@ -15,7 +15,7 @@ fig, ax = plt.subplots(figsize=(16, 0))
 ax.plot(t, u, label='sin(t)', color='b') # plotting sin(t) curve
 ax.set_ylabel("")
 ax.set_xlabel("t")
-ax.tick_params(axis='y', labelssize=20)
+ax.tick_params(axis='y', labelsize=20)
 ax.set_xticklabels(ax.get_xticklabels(), rotation=30, ha='right')
 ax.tick_params(axis='x', labelsize=15)
 plt.grid(color='green', linestyle='-,', linewidth=.5)
