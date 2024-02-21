@@ -15,7 +15,7 @@ def trapezoidal_integral(f, a, b, n):
     return integral_value
 
 # Streamlit app
-q = 23x^2
+q = 23*x**2
 st.title('Integral Trapesium untuk Fungsi f(x) = q + 17x + 9')
 
 # Slider untuk memilih rentang nilai x
