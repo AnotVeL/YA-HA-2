@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 def f(x):
     return 23*x**2 + 9*x + 18
 
-st.write('TUGAS HARI KE-4')
+st.write('INTEGRAL TRAPESIUM UNTUK FUNGSI F(X)= 23x**2 + 9x + 18')
 
 x = st.slider('Select range', -2.0, 2.0, (0.2, 0.5))
 st.write('Selected range:', x)
