@@ -1,7 +1,13 @@
 import streamlit as st
-import pandas as pd
+
+# Install seaborn
+st.write("Installing seaborn...")
+import subprocess
+subprocess.check_call(["pip", "install", "seaborn"])
+
+# Now seaborn is installed and can be imported
 import seaborn as sns
-import matplotlib.pyplot as plt
+import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
