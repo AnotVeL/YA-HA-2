@@ -1,18 +1,21 @@
 import streamlit as st
-
-# Install required packages
-st.write("Installing required packages...")
-import subprocess
-subprocess.check_call(["pip", "install", "seaborn", "scikit-learn"])
-
-# Import libraries
-import seaborn as sns
 import pandas as pd
 import numpy as np
+import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
+
+# Install required packages (with error handling)
+def install_packages(packages):
+    for package in packages:
+        try:
+            subprocess.check_call(["pip", "install", package])
+        except Exception as e:
+            st.error(f"Error installing {package}: {e}")
+
+install_packages(["seaborn", "scikit-learn"])
 
 # Load data
 @st.cache
@@ -32,8 +35,6 @@ st.subheader('Data Visualization')
 # Display count plot
 st.write(sns.countplot(x=df['Heart Disease'], hue='Sex', data=df))
 
-# Display other plots here...
-
 # Split data
 X = df.drop(columns=['Heart Disease'])
 y = df['Heart Disease'].map({'Presence': 1, 'Absence': 0})
@@ -45,7 +46,7 @@ scaler = StandardScaler()
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
 
-# Build model
+# Build and train model
 model = Sequential([
     Dense(128, activation='relu', input_shape=(X_train.shape[1],)),
     Dense(64, activation='relu'),
@@ -72,7 +73,8 @@ binary_predictions = (predictions > 0.5).astype(int)
 
 st.write(f"Predicted Probability: {predictions[0][0]}")
 st.write(f"Binary Prediction: {binary_predictions[0][0]}")
-if binary_predictions == 0:
+if binary_predictions[0][0] == 0:
     st.write("Absence")
 else:
     st.write("Presence")
+
