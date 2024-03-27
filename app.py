@@ -11,11 +11,6 @@ import pandas as pd
 
 df = pd.read_csv('Heart_Disease_Prediction.csv')
 
-# Set pandas option to handle inf as null values
-with pd.option_context('mode.use_inf_as_null', True):
-    # Plot lineplot
-    st.write(sns.lineplot(x=df['Age'], y=df['Cholesterol'], data=df))
-
 df.head()
 
 df.info()
