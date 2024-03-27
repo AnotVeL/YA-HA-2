@@ -1,11 +1,11 @@
 import streamlit as st
 
-# Install seaborn
-st.write("Installing seaborn...")
+# Install required packages
+st.write("Installing required packages...")
 import subprocess
-subprocess.check_call(["pip", "install", "seaborn"])
+subprocess.check_call(["pip", "install", "seaborn", "scikit-learn"])
 
-# Now seaborn is installed and can be imported
+# Import libraries
 import seaborn as sns
 import pandas as pd
 import numpy as np
